@@ -28,6 +28,7 @@ namespace sprint2whileloops
 
 
             string atmPin;
+            int counter = 0;
             do
             {
                 Console.WriteLine("Please enter your ATM pin");
@@ -35,12 +36,17 @@ namespace sprint2whileloops
 
                 if (atmPin == "1234")
                 {
-                    Console.WriteLine("You Enter the correct Pin!");
+                    Console.WriteLine("You entered the correct Pin!");
                 }
 
-                Console.WriteLine("You entered the incorrect Pin!!!");
+                if (counter == 2)
+                {
+                    Console.WriteLine("You entered the incorrect Pin 3 times!!!");
+                }
+               
+                counter++;
 
-            } while (atmPin != "1234");
+            } while (atmPin != "1234" && counter != 3);
 
         }
     }
