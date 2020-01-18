@@ -25,6 +25,23 @@ namespace sprint2whileloops
                     Console.WriteLine("Options: too hot, too cold, just right ");
                 }
             } while (porridgeTemperature.Equals("help"));
+
+
+            string atmPin;
+            do
+            {
+                Console.WriteLine("Please enter your ATM pin");
+                atmPin = Console.ReadLine();
+
+                if (atmPin == "1234")
+                {
+                    Console.WriteLine("You Enter the correct Pin!");
+                }
+
+                Console.WriteLine("You entered the incorrect Pin!!!");
+
+            } while (atmPin != "1234");
+
         }
     }
 }
