@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace sprint2whileloops
 {
@@ -52,20 +53,20 @@ namespace sprint2whileloops
 
             */
 
-            int numOne = 0;
 
-            Console.WriteLine("Please enter a number to add all numbers");
-            string input = Console.ReadLine();
-            numOne = Convert.ToInt32(input);
+            int lowerNumber = 0;
+            int higherNumber = 0;
 
-            for (int i = numOne; i < numOne; i--)
+            Console.WriteLine("Please enter a lower number");
+            string inputOne = Console.ReadLine();
+            lowerNumber = Convert.ToInt32(inputOne);
+
+            int temp = 0;
+
+            for (int count = 1; count <= lowerNumber; count++)
             {
-                Console.WriteLine(i);
-            }
-
-            for (int count = 1; count <= numOne; count++)
-            {
-                Console.WriteLine("Count is " + count);
+                temp += count;
+                Console.WriteLine(temp);
             }
 
 
