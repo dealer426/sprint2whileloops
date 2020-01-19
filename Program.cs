@@ -65,9 +65,12 @@ namespace sprint2whileloops
             string inputTwo = Console.ReadLine();
             higherNumber = Convert.ToInt32(inputTwo);
 
-            int sumOfNumbers = 0;
+            CheckNumbers(lowerNumber, higherNumber);
+        }
 
-            Console.WriteLine("******");
+        public static void CheckNumbers(int lowerNumber, int higherNumber)
+        {
+            int sumOfNumbers = 0;
 
             if (lowerNumber > higherNumber)
             {
@@ -80,11 +83,9 @@ namespace sprint2whileloops
                     sumOfNumbers += count;
                 }
 
+                Console.WriteLine("***************");
                 Console.WriteLine($"The total of the numbers between {lowerNumber} & {higherNumber} is {sumOfNumbers} ");
             }
-
-
-
         }
     }
 }
