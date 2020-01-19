@@ -78,8 +78,9 @@ namespace sprint2whileloops
                 for (int count = lowerNumber; count <= higherNumber; count++)
                 {
                     temp += count;
-                    Console.WriteLine(temp);
                 }
+
+                Console.WriteLine($"The total of the numbers between {lowerNumber} & {higherNumber} is {temp} ");
             }
 
 
