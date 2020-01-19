@@ -61,6 +61,13 @@ namespace sprint2whileloops
             string inputOne = Console.ReadLine();
             lowerNumber = Convert.ToInt32(inputOne);
 
+            Console.WriteLine("Please enter a higher number");
+            string inputTwo = Console.ReadLine();
+            higherNumber = Convert.ToInt32(inputTwo);
+
+            Console.WriteLine(lowerNumber);
+            Console.WriteLine(higherNumber);
+
             int temp = 0;
 
             for (int count = 1; count <= lowerNumber; count++)
