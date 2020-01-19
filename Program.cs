@@ -57,6 +57,14 @@ namespace sprint2whileloops
             int lowerNumber = 0;
             int higherNumber = 0;
 
+            GetNumbers(ref lowerNumber, ref higherNumber);
+            CheckNumbers(lowerNumber, higherNumber);
+
+        }
+
+
+        public static void GetNumbers(ref int lowerNumber, ref int higherNumber)
+        {
             Console.WriteLine("Please enter a lower number");
             string inputOne = Console.ReadLine();
             lowerNumber = Convert.ToInt32(inputOne);
@@ -64,8 +72,6 @@ namespace sprint2whileloops
             Console.WriteLine("Please enter a higher number");
             string inputTwo = Console.ReadLine();
             higherNumber = Convert.ToInt32(inputTwo);
-
-            CheckNumbers(lowerNumber, higherNumber);
         }
 
         public static void CheckNumbers(int lowerNumber, int higherNumber)
