@@ -69,12 +69,18 @@ namespace sprint2whileloops
 
             Console.WriteLine("******");
 
-            for (int count = lowerNumber; count <= higherNumber; count++)
+            if (lowerNumber > higherNumber)
             {
-                temp += count;
-                Console.WriteLine(temp);
+                Console.WriteLine("Error the first number needs to be Higher.");
             }
-
+            else
+            {
+                for (int count = lowerNumber; count <= higherNumber; count++)
+                {
+                    temp += count;
+                    Console.WriteLine(temp);
+                }
+            }
 
 
 
