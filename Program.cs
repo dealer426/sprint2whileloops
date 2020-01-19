@@ -6,6 +6,8 @@ namespace sprint2whileloops
     {
         static void Main(string[] args)
         {
+
+            /*
             int count = 1;
             while (count < 11)
             {
@@ -47,6 +49,27 @@ namespace sprint2whileloops
                 counter++;
 
             } while (atmPin != "1234" && counter != 3);
+
+            */
+
+            int numOne = 0;
+
+            Console.WriteLine("Please enter a number to add all numbers");
+            string input = Console.ReadLine();
+            numOne = Convert.ToInt32(input);
+
+            for (int i = numOne; i < numOne; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            for (int count = 1; count <= numOne; count++)
+            {
+                Console.WriteLine("Count is " + count);
+            }
+
+
+
 
         }
     }
