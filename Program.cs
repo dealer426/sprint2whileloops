@@ -65,7 +65,7 @@ namespace sprint2whileloops
             string inputTwo = Console.ReadLine();
             higherNumber = Convert.ToInt32(inputTwo);
 
-            int temp = 0;
+            int sumOfNumbers = 0;
 
             Console.WriteLine("******");
 
@@ -77,10 +77,10 @@ namespace sprint2whileloops
             {
                 for (int count = lowerNumber; count <= higherNumber; count++)
                 {
-                    temp += count;
+                    sumOfNumbers += count;
                 }
 
-                Console.WriteLine($"The total of the numbers between {lowerNumber} & {higherNumber} is {temp} ");
+                Console.WriteLine($"The total of the numbers between {lowerNumber} & {higherNumber} is {sumOfNumbers} ");
             }
 
 
